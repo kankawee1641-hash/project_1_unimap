@@ -1,0 +1,11 @@
+Feature,Importance
+vehicle_age_years,0.4173236362515738
+market_segment_Premium,0.41506903857285
+mileage_km,0.07051868331845217
+market_segment_Mid_Range,0.03953942013297097
+engine_size_l,0.03390810856521428
+condition_rating,0.018823144935958002
+previous_owners,0.0025006513712933177
+fuel_type_Hybrid,0.0015080067572392575
+transmission_Manual,0.0007923488234657734
+fuel_type_Petrol,1.6961270982443565e-05

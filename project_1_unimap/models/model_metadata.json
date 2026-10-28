@@ -1,0 +1,57 @@
+{
+    "project_title": "Used Car Resale Price Prediction",
+    "course": "IFJC4002 Practical AI with Python (UniMAP)",
+    "training_timestamp": "2026-10-28 15:22:52",
+    "total_dataset_samples": 2000,
+    "train_samples": 1600,
+    "test_samples": 400,
+    "selected_model": "Gradient Boosting Regressor",
+    "target_column": "resale_price_rm",
+    "features": [
+        "vehicle_age_years",
+        "mileage_km",
+        "engine_size_l",
+        "fuel_type",
+        "transmission",
+        "market_segment",
+        "condition_rating",
+        "previous_owners"
+    ],
+    "evaluation_summary": [
+        {
+            "Model": "Baseline (Mean Predictor)",
+            "5-Fold CV R\u00b2": 0.0,
+            "Test MAE (RM)": 41538.0,
+            "Test RMSE (RM)": 56184.62,
+            "Test R\u00b2": -0.0
+        },
+        {
+            "Model": "Linear Regression",
+            "5-Fold CV R\u00b2": 0.8106,
+            "Test MAE (RM)": 17070.46,
+            "Test RMSE (RM)": 24317.06,
+            "Test R\u00b2": 0.8127
+        },
+        {
+            "Model": "Ridge Regression",
+            "5-Fold CV R\u00b2": 0.8106,
+            "Test MAE (RM)": 17057.41,
+            "Test RMSE (RM)": 24324.55,
+            "Test R\u00b2": 0.8126
+        },
+        {
+            "Model": "Random Forest Regressor",
+            "5-Fold CV R\u00b2": 0.965,
+            "Test MAE (RM)": 5990.65,
+            "Test RMSE (RM)": 10215.71,
+            "Test R\u00b2": 0.9669
+        },
+        {
+            "Model": "Gradient Boosting Regressor",
+            "5-Fold CV R\u00b2": 0.9716,
+            "Test MAE (RM)": 5649.5,
+            "Test RMSE (RM)": 9229.92,
+            "Test R\u00b2": 0.973
+        }
+    ]
+}

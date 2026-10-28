@@ -1,0 +1,39 @@
+========================================================================
+IFJC4002 PRACTICAL ARTIFICIAL INTELLIGENCE - PROJECT EXECUTION SUMMARY
+Case 2: Used Car Price Prediction (Regression)
+Generated on: 2026-10-28 15:22:52
+========================================================================
+
+1. DATASET CHARACTERISTICS:
+   - Total Samples: 2000 records
+   - Target Variable: resale_price_rm (Mean: RM 66,797.37, Range: RM 6,005.89 - RM 398,191.43)
+   - Missing Values Handled: vehicle_age_years (16), mileage_km (16)
+   - Train Split: 1600 samples (80%)
+   - Test Split: 400 samples (20%)
+
+2. MODEL EVALUATION & COMPARISON TABLE:
+                      Model  5-Fold CV R²  Test MAE (RM)  Test RMSE (RM)  Test R²
+  Baseline (Mean Predictor)        0.0000       41538.00        56184.62  -0.0000
+          Linear Regression        0.8106       17070.46        24317.06   0.8127
+           Ridge Regression        0.8106       17057.41        24324.55   0.8126
+    Random Forest Regressor        0.9650        5990.65        10215.71   0.9669
+Gradient Boosting Regressor        0.9716        5649.50         9229.92   0.9730
+
+3. SELECTED FINAL MODEL:
+   - Best Model: Gradient Boosting Regressor
+   - Exported Pipeline: models/car_price_pipeline.joblib
+
+4. ARTIFACTS SAVED IN GOOGLE DRIVE:
+   - outputs/01_price_distribution.png
+   - outputs/02_market_segment_boxplot.png
+   - outputs/03_correlation_heatmap.png
+   - outputs/04_actual_vs_predicted.png
+   - outputs/05_residuals_distribution.png
+   - outputs/06_feature_importance.png
+   - outputs/model_comparison.csv
+   - outputs/test_predictions_detailed.csv
+   - outputs/descriptive_statistics.csv
+   - models/car_price_pipeline.joblib
+   - models/model_metadata.json
+   - data/processed/train_data.csv & test_data.csv
+========================================================================

@@ -1,0 +1,6 @@
+Model,5-Fold CV R²,Test MAE (RM),Test RMSE (RM),Test R²
+Baseline (Mean Predictor),0.0,41538.0,56184.62,-0.0
+Linear Regression,0.8106,17070.46,24317.06,0.8127
+Ridge Regression,0.8106,17057.41,24324.55,0.8126
+Random Forest Regressor,0.965,5990.65,10215.71,0.9669
+Gradient Boosting Regressor,0.9716,5649.5,9229.92,0.973
